@@ -1,21 +1,3 @@
 plugins:
   - uses:
-    - plugin: https://ubiquity-os-daemon-pricing-development.fernand-veyrier.workers.dev
-  - uses:
-    - plugin: Meniole/daemon-disqualifier@development
-      with:
-        warning: "1 minute"
-        pullRequestRequired: true
-        eventWhitelist:
-          - 'pull_request.review_requested'
-          - 'pull_request.ready_for_review'
-          - 'pull_request_review_comment.created'
-          - 'issue_comment.created'
-          - 'push'
-        watch:
-          optOut:
-            - ubiquibot
-            - launch-party
-            - staging
-            - production
-        disqualification: "2 minutes"
+    - plugin: ubiquity-os-marketplace/personal-agent-bridge@bridge
