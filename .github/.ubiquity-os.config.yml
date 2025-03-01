@@ -1,6 +1,6 @@
 plugins:
-  - uses:
-    - plugin: Meniole/personal-agent-bridge@development
+  # - uses:
+  #   - plugin: Meniole/personal-agent-bridge@development
   - uses:
     # - plugin: gentlementlegen/personal-agent@development
     - plugin: https://comic-bee-miserably.ngrok-free.app
